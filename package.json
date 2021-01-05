@@ -36,5 +36,8 @@
     "xmllint",
     "dtd",
     "well-formed"
+  ],
+  "precommit": [
+    "build"
   ]
 }
