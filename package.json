@@ -12,7 +12,7 @@
     "build": "tsc",
     "watch": "tsc --watch",
     "test": "nyc mocha",
-    "postinstall": "node ./lib/validate-xmllint-installation.js"
+    "postinstall": "npm run build && node ./lib/validate-xmllint-installation.js"
   },
   "repository": {
     "type": "git",
