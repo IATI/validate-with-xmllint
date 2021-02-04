@@ -6,7 +6,13 @@
  */
 export declare const validateXML: (input: string | Buffer) => Promise<string | void>;
 /**
- * Validate XML without any DTD or schema. Recover XML file.
+ * Validate XML without any DTD or schema. Return Recovered XML.
+ *
+ * @param input XML
+ */
+export declare const validateXMLrecover: (input: string | Buffer, output: string | Buffer) => Promise<string | void>;
+/**
+ * Validate XML without any DTD or schema. Output Recovered XML to file.
  *
  * @param input XML
  * @param output File path to store output
